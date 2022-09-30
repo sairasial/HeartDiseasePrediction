@@ -1,0 +1,94 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link rel="shortcut icon" href="/static/DiseasePrediction/images/logo.png">
+    <style type="text/css">
+
+        body{
+        background-image:url("{% static 'DiseasePrediction/images/image.jpg'%}");
+            background-repeat:no-repeat;
+            background attachment:fixed;
+            background-size:cover;
+        }
+
+        div{
+    color:red;
+    }
+    h1{
+    color:black;
+    font-family:  bungee;
+    font-size:60px;
+    font-weight:bold;
+<!--    margin-top:200px;-->
+    }
+
+    h2{
+    color:red;
+    font-family: arial, sans-serif;
+    font-size:15px;
+    font-weight:bold;
+    margin-top:400px;
+    }
+
+        input[type=submit]{
+        background-color:#CC0000;
+        border:2px;
+        font-size:140%;
+        width:22%;
+        color:white;
+        margin-left: 54%;
+        padding:16px 32px;
+        cursor:pointer;
+        margin-top:15px;
+        }
+        .responsive {
+ margin-right: -85%;
+    width: 15%;
+    height: 15%;
+}
+h1{
+margin-left: 52%;
+    margin-right: 3%;
+    font-size:160%;
+        color:black;
+        text-align: justify;
+    font-family:  bungee;
+    font-weight:bold;}
+
+    #heading{
+      margin-left: 53%;
+    font-size:160%;
+      font-size:200%;
+        color:#CC0000;
+        text-align: center;
+    font-family:  bungee;
+    font-weight:bold;
+    }
+
+    </style>
+</head>
+<body>
+<div align="center">
+    <img src="static/DiseasePrediction/images/logo.png" alt="Nature" class="responsive" height="400">
+
+    <p id="heading">Heart Disease Prediction</p>
+    <h1>
+        The only calibration that counts is how much heart people invest. And the only thing people regret
+        is that they didn't live boldly enough, that they didn't invest enough heart, didn't love enough. Nothing else
+        really counts at all.
+        Do you think, because you am poor, obscure, plain and little, you are soulless and heartless? You think wrong!
+        -if God had gifted you with some beauty and much wealth,
+        you should have made it. Many of life's failures are people who did not realize how close they were to success
+        when they gave up.
+    </h1>
+    <form action="predict">
+        <input type="submit" value="Let's Get Started">
+    </form>
+
+</div>
+
+</body>
+</html>

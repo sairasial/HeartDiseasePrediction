@@ -1,0 +1,124 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+     <link rel="shortcut icon" href="/static/DiseasePrediction/images/logo.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+<style>
+body{
+     background-image:url("{% static 'DiseasePrediction/images/image2.jpg'%}");
+            background-repeat:no-repeat;
+            background attachment:fixed;
+            background-size:cover;
+}
+.login-container{                                                     /*container*/
+  max-width: 500px;
+  margin-top:55%;
+  margin: 120px auto;
+}
+.wrapper{
+  width: 100%;
+  margin-top: 55%;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
+}
+.wrapper .title{                                            /*text login form green bg*/
+  /* height: 90px; */
+  height: 12%;
+  background: #CC0000;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper form{
+  padding: 30px 25px 25px 25px;
+}
+.wrapper form .row{
+  height: 45px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.wrapper form .row input{                        /*input boxes*/
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 60px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+form .row input:focus{
+  border-color: #CC0000;
+  box-shadow: inset 0px 0px 2px 2px rgba(26,188,156,0.25);
+}
+form .row input::placeholder{
+  color: #999;
+}
+.wrapper form .row i{
+  position: absolute;
+  width: 47px;
+  height: 100%;
+  color: #fff;
+  font-size: 18px;
+  background: black;
+  border: 1px solid #CC0000;
+  border-radius: 5px 0 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper form .pass{
+  margin: -8px 0 20px 0;
+}
+.wrapper form .pass a{
+  color: #CC0000;
+  font-size: 17px;
+  text-decoration: none;
+}
+.wrapper form .pass a:hover{
+  text-decoration: underline;
+}
+.wrapper form .button input{
+  padding: 3%;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 0px;
+  background: #CC0000;
+  border: 1px solid #CC0000;
+  cursor: pointer;
+  margin-top: 8px;
+}
+form .button input:hover{                                               /*login hover*/
+  background: black;
+}
+.title{
+padding: 4%;}
+</style>
+<body>
+
+<!-- confirmation form -->
+    <div class="login-container">
+      <div class="wrapper">
+        <div class="title"><span>Results</span></div>
+        <form action="result">
+            <center> <h1>Your Result is {{result2}}</h1></center>
+            <br>
+            <div class="button">
+           <a href="http://127.0.0.1:8000/"><center> <input style="text-align:center !important;" value="Click Here to Go Back" > </center> </a>
+          </div>
+        </form>
+      </div>
+    </div>
+</body>
+</html>
+
